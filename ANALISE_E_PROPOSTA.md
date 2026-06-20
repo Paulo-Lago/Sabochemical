@@ -4,7 +4,7 @@
 
 - Site publicado: `http://sabochemical.com/mobile/`
 - Data da analise: 15/06/2026
-- Entrega produzida: site estatico em `index.html`, `styles.css`, `script.js` e pasta `assets/`
+- Entrega produzida: site estatico multipagina em `index.html`, `empresa.html`, `solucoes.html`, `tecnologias.html`, `projetos.html`, `contato.html`, `styles.css`, `script.js`, `assets/`, `robots.txt` e `sitemap.xml`
 
 ## Problemas encontrados
 
@@ -22,18 +22,19 @@
 
 ## Proposta de melhoria
 
-Reconstruir a presenca digital da SABOCHEMICAL como uma pagina institucional objetiva, responsiva e orientada a contato. A pagina apresenta:
+Reconstruir a presenca digital da SABOCHEMICAL como um site institucional multipagina, responsivo e orientado a contato. A home apresenta a visao geral e as paginas internas detalham cada topico:
 
 - Posicionamento claro: engenharia de aguas, tratamento de agua e efluentes em Manaus.
-- Blocos de servicos: ETE, ETA, ETO, cloracao, filtros, separadores agua/oleo e produtos quimicos.
+- Paginas dedicadas para empresa, solucoes, tecnologias, projetos e contato.
+- Conteudo ampliado das paginas originais: cloracao, fabricacao ETE/ETA/ETO, filtros, separadores, hipoclorito, tratamento de agua gelada, limpeza quimica, tratamento do ar e projetos realizados.
 - Projetos realizados com imagens publicas reaproveitadas do site atual.
 - Canais de conversao com telefone, WhatsApp, e-mail e endereco.
 - Formulario sem backend, adequado para hospedagem estatica na KingHost.
 
 ## Solucoes aplicadas
 
-- Criacao de `index.html` semantico com `header`, `main`, `section`, `footer`, `h1/h2/h3` e conteudo indexavel.
-- Criacao de `styles.css` responsivo para celular, tablet e desktop, sem dependencias pesadas.
+- Criacao de `index.html` semantico e paginas internas com `header`, `main`, `section`, `footer`, `h1/h2/h3` e conteudo indexavel.
+- Criacao de `styles.css` responsivo para celular, tablet e desktop, sem dependencias pesadas, com layouts especificos para home e paginas internas.
 - Criacao de `script.js` leve para menu mobile, validacao do formulario e abertura de WhatsApp/e-mail.
 - Download dos assets publicos essenciais para `assets/`: logotipo e tres imagens de projetos.
 - Inclusao de SEO basico: `title`, `description`, canonical, Open Graph, schema JSON-LD e textos alternativos.
@@ -48,7 +49,7 @@ Reconstruir a presenca digital da SABOCHEMICAL como uma pagina institucional obj
 1. Validar com a empresa se todos os telefones, e-mails e endereco seguem atuais.
 2. Subir `index.html`, `styles.css`, `script.js` e a pasta `assets/` para a raiz do dominio.
 3. Configurar o dominio atual `sabochemical.com` para servir a nova raiz estatica.
-4. Manter redirecionamento de URLs antigas para a nova home quando possivel.
+4. Manter redirecionamento de URLs antigas para a nova home ou para a pagina interna correspondente quando possivel.
 5. Ativar HTTPS no painel da KingHost e testar `https://sabochemical.com/`.
 6. Enviar a nova URL ao Google Search Console para reindexacao.
 
@@ -61,4 +62,4 @@ Reconstruir a presenca digital da SABOCHEMICAL como uma pagina institucional obj
 - Formulario validando campos obrigatorios.
 - Mensagem de WhatsApp/e-mail gerada a partir dos campos.
 - Imagens carregando com texto alternativo.
-- `title`, `description`, `h1` e headings presentes.
+- `title`, `description`, `h1` e headings presentes em todas as paginas principais.

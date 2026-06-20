@@ -4,8 +4,8 @@ Site estático institucional da SABOCHEMICAL Engenharia de Águas, reconstruído
 
 ## Conteúdo
 
-- Página responsiva para celular, tablet e desktop.
-- Seções institucionais: empresa, soluções, tecnologias, projetos e contato.
+- Site multipágina responsivo para celular, tablet e desktop.
+- Home institucional e páginas dedicadas para empresa, soluções, tecnologias, projetos e contato.
 - Contato por telefone, WhatsApp e e-mail.
 - Formulário sem backend que monta mensagem para WhatsApp ou e-mail.
 - SEO básico com `title`, `description`, Open Graph e JSON-LD.
@@ -17,6 +17,13 @@ Site estático institucional da SABOCHEMICAL Engenharia de Águas, reconstruído
 .
 ├── assets/
 ├── index.html
+├── empresa.html
+├── solucoes.html
+├── tecnologias.html
+├── projetos.html
+├── contato.html
+├── robots.txt
+├── sitemap.xml
 ├── styles.css
 ├── script.js
 ├── ANALISE_E_PROPOSTA.md
