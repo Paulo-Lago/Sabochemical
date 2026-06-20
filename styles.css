@@ -423,6 +423,99 @@ h3 {
   gap: 18px;
 }
 
+
+.systems-panel {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1.25fr);
+  gap: 32px;
+  align-items: start;
+  margin-top: 34px;
+  padding: 28px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #ffffff, var(--color-soft));
+  box-shadow: 0 14px 35px rgba(10, 61, 69, 0.08);
+}
+
+.systems-panel h3 {
+  font-size: 1.45rem;
+}
+
+.systems-panel p {
+  margin: 14px 0 0;
+  color: var(--color-muted);
+}
+
+.systems-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.systems-list li {
+  position: relative;
+  min-height: 44px;
+  padding: 10px 12px 10px 30px;
+  border: 1px solid rgba(15, 107, 99, 0.14);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+.systems-list li::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-green);
+}
+
+.specialty-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.specialty-card {
+  padding: 24px;
+  border: 1px solid rgba(15, 107, 99, 0.14);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.specialty-card p {
+  margin: 12px 0 0;
+  color: var(--color-muted);
+}
+
+.specialty-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+
+.specialty-card--dark {
+  background: var(--color-deep);
+  color: #ffffff;
+}
+
+.specialty-card--dark .card__tag,
+.specialty-card--dark p {
+  color: #b9e36c;
+}
+
+.specialty-card--dark li {
+  color: #e6f2ef;
+}
 .technology-list article {
   padding: 24px;
   border-left: 5px solid var(--color-green);
@@ -606,7 +699,13 @@ textarea[aria-invalid="true"] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .technology-list {
+  .technology-list,
+  .specialty-grid,
+  .systems-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .systems-list {
     grid-template-columns: 1fr;
   }
 }
@@ -710,6 +809,24 @@ textarea[aria-invalid="true"] {
   .nav-menu {
     top: 78px;
   }
+  .brand {
+    gap: 10px;
+  }
+
+  .brand__mark {
+    width: 148px;
+    min-width: 148px;
+    height: 54px;
+  }
+
+  .brand__text strong {
+    font-size: 0.94rem;
+  }
+
+  .brand__text small {
+    font-size: 0.72rem;
+  }
+
 
   .hero__panel,
   .cards--four,
