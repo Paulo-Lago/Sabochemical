@@ -7,7 +7,7 @@
   const emailButton = document.querySelector("[data-email-button]");
 
   const whatsappNumber = "5592991648231";
-  const emailTo = "sabochemical@hotmail.com,gerencia@sabochemical.com";
+  const emailTo = "gerencia@sabochemical.com,comercial@sabochemical.com";
 
   function updateMenuTop() {
     if (!header || !menu) return;

@@ -965,10 +965,39 @@ textarea[aria-invalid="true"] {
 }
 
 .page-hero {
+  --page-hero-image: linear-gradient(135deg, #0a3d45, #0f6b63);
+  --page-hero-position: center;
   background:
-    linear-gradient(120deg, rgba(10, 61, 69, 0.96), rgba(15, 107, 99, 0.86)),
-    linear-gradient(135deg, #0a3d45, #0f6b63);
+    linear-gradient(120deg, rgba(7, 31, 36, 0.88), rgba(15, 107, 99, 0.72)),
+    var(--page-hero-image);
+  background-position: center, var(--page-hero-position);
+  background-size: cover, cover;
   color: #ffffff;
+}
+
+.page-hero--empresa {
+  --page-hero-image: url("assets/page-empresa.jpg");
+  --page-hero-position: center 42%;
+}
+
+.page-hero--solucoes {
+  --page-hero-image: url("assets/page-solucoes.webp");
+  --page-hero-position: center;
+}
+
+.page-hero--tecnologias {
+  --page-hero-image: url("assets/page-tecnologias.webp");
+  --page-hero-position: center;
+}
+
+.page-hero--projetos {
+  --page-hero-image: url("assets/page-projetos.jpg");
+  --page-hero-position: center;
+}
+
+.page-hero--contato {
+  --page-hero-image: url("assets/page-contato.webp");
+  --page-hero-position: center;
 }
 
 .page-hero__grid {
