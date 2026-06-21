@@ -255,9 +255,14 @@ button {
 .hero {
   position: relative;
   overflow: hidden;
-  background:
+  background-color: var(--color-deep);
+  background-image:
     linear-gradient(90deg, rgba(16, 48, 144, 0.94) 0%, rgba(16, 48, 144, 0.78) 46%, rgba(128, 176, 32, 0.2) 100%),
-    url("assets/home-background.jpg") center / cover no-repeat;
+    url("assets/home-background.jpg"),
+    linear-gradient(135deg, #103090, #80b020);
+  background-position: center, right center, center;
+  background-repeat: no-repeat;
+  background-size: cover, min(52vw, 760px) auto, cover;
   color: #ffffff;
 }
 
@@ -1071,38 +1076,41 @@ textarea[aria-invalid="true"] {
 
 .page-hero {
   --page-hero-image: linear-gradient(135deg, #103090, #80b020);
-  --page-hero-position: center;
-  background:
-    linear-gradient(120deg, rgba(16, 48, 144, 0.9), rgba(16, 48, 144, 0.68) 58%, rgba(128, 176, 32, 0.5)),
-    var(--page-hero-image);
-  background-position: center, var(--page-hero-position);
-  background-size: cover, cover;
+  --page-hero-position: right center;
+  --page-hero-repeat: no-repeat;
+  --page-hero-size: min(44vw, 620px) auto;
+  background-color: var(--color-deep);
+  background-image:
+    linear-gradient(120deg, rgba(16, 48, 144, 0.94), rgba(16, 48, 144, 0.78) 56%, rgba(128, 176, 32, 0.38)),
+    var(--page-hero-image),
+    linear-gradient(135deg, #103090, #80b020);
+  background-position: center, var(--page-hero-position), center;
+  background-repeat: no-repeat, var(--page-hero-repeat), no-repeat;
+  background-size: cover, var(--page-hero-size), cover;
   color: #ffffff;
 }
 
 .page-hero--empresa {
   --page-hero-image: url("assets/page-empresa.jpg");
-  --page-hero-position: center 42%;
+  --page-hero-position: right center;
+  --page-hero-size: auto 88%;
 }
 
 .page-hero--solucoes {
   --page-hero-image: url("assets/page-solucoes.webp");
-  --page-hero-position: center;
 }
 
 .page-hero--tecnologias {
   --page-hero-image: url("assets/page-tecnologias.webp");
-  --page-hero-position: center;
 }
 
 .page-hero--projetos {
   --page-hero-image: url("assets/page-projetos.jpg");
-  --page-hero-position: center;
+  --page-hero-size: min(40vw, 560px) auto;
 }
 
 .page-hero--contato {
   --page-hero-image: url("assets/page-contato.webp");
-  --page-hero-position: center;
 }
 
 .page-hero__grid {
@@ -1429,9 +1437,26 @@ textarea[aria-invalid="true"] {
 }
 @media (max-width: 640px) {
   .hero {
-    background:
-      linear-gradient(180deg, rgba(16, 48, 144, 0.94) 0%, rgba(16, 48, 144, 0.82) 58%, rgba(128, 176, 32, 0.34) 100%),
-      url("assets/home-background.jpg") 64% center / cover no-repeat;
+    background-image:
+      linear-gradient(180deg, rgba(16, 48, 144, 0.96) 0%, rgba(16, 48, 144, 0.86) 54%, rgba(128, 176, 32, 0.3) 100%),
+      url("assets/home-background.jpg"),
+      linear-gradient(135deg, #103090, #80b020);
+    background-position: center, center bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover, min(96vw, 520px) auto, cover;
+  }
+
+  .page-hero {
+    --page-hero-position: center bottom;
+    --page-hero-size: min(92vw, 480px) auto;
+    background-image:
+      linear-gradient(180deg, rgba(16, 48, 144, 0.96), rgba(16, 48, 144, 0.84) 54%, rgba(16, 48, 144, 0.68)),
+      var(--page-hero-image),
+      linear-gradient(135deg, #103090, #80b020);
+  }
+
+  .page-hero--empresa {
+    --page-hero-size: min(84vw, 360px) auto;
   }
 
   .gallery-project__header {
