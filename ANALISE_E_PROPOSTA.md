@@ -24,7 +24,7 @@
 
 Reconstruir a presenca digital da SABOCHEMICAL como um site institucional multipagina, responsivo e orientado a contato. A home apresenta a visao geral e as paginas internas detalham cada topico:
 
-- Posicionamento claro: engenharia de aguas, tratamento de agua e efluentes em Manaus.
+- Posicionamento claro: engenharia de aguas, tratamento de agua e efluentes em todo o Brasil.
 - Paginas dedicadas para empresa, solucoes, tecnologias, projetos e contato.
 - Conteudo ampliado das paginas originais: cloracao, fabricacao ETE/ETA/ETO, filtros, separadores, hipoclorito, tratamento de agua gelada, limpeza quimica, tratamento do ar e projetos realizados.
 - Projetos realizados com imagens publicas reaproveitadas do site atual.
