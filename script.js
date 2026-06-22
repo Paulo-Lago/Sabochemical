@@ -47,7 +47,7 @@
     });
 
     if (firstInvalid) {
-      setStatus("Preencha os campos obrigatorios antes de enviar.", false);
+      setStatus("Preencha os campos obrigatórios antes de enviar.", false);
       firstInvalid.focus();
       return false;
     }
@@ -64,7 +64,7 @@
     const mensagem = getField("mensagem").value.trim();
 
     return [
-      "Ola, vim pelo site da SABOCHEMICAL.",
+      "Olá, vim pelo site da SABOCHEMICAL Engenharia de Águas.",
       "",
       `Nome: ${nome}`,
       `E-mail: ${email}`,
@@ -78,7 +78,7 @@
   function openWhatsApp() {
     if (!validateForm()) return;
     const message = encodeURIComponent(buildMessage());
-    setStatus("Mensagem pronta. Abrindo WhatsApp...", true);
+    setStatus("Mensagem pronta. Abrindo o WhatsApp...", true);
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank", "noopener");
   }
 
@@ -86,7 +86,7 @@
     if (!validateForm()) return;
     const subject = encodeURIComponent("Contato pelo site SABOCHEMICAL");
     const body = encodeURIComponent(buildMessage());
-    setStatus("Mensagem pronta. Abrindo e-mail...", true);
+    setStatus("Mensagem pronta. Abrindo seu e-mail...", true);
     window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
   }
 

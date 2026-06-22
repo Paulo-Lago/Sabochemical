@@ -19,6 +19,7 @@ desktop.ini
 node_modules/
 dist/
 build/
+graphify-out/
 
 # Ambiente local
 .env
