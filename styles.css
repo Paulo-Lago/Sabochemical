@@ -1446,7 +1446,8 @@ textarea[aria-invalid="true"] {
   grid-template-columns: 1fr;
 }
 
-.project-grid--featured .project h2 {
+.project-grid--featured .project h2,
+.project-grid--featured .project h3 {
   font-size: 1.35rem;
 }
 
