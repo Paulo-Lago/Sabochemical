@@ -65,11 +65,12 @@
 
     return [
       "Olá, vim pelo site da SABOCHEMICAL Engenharia de Águas.",
+      "Solicito atendimento para Tratamento de Água e Efluentes.",
       "",
       `Nome: ${nome}`,
       `E-mail: ${email}`,
       `Telefone: ${telefone}`,
-      `Assunto: ${assunto}`,
+      `Tipo de atendimento: ${assunto}`,
       "",
       `Mensagem: ${mensagem}`
     ].join("\n");
@@ -84,7 +85,7 @@
 
   function openEmail() {
     if (!validateForm()) return;
-    const subject = encodeURIComponent("Contato pelo site SABOCHEMICAL");
+    const subject = encodeURIComponent("Solicitação de contato pelo site SABOCHEMICAL");
     const body = encodeURIComponent(buildMessage());
     setStatus("Mensagem pronta. Abrindo seu e-mail...", true);
     window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
